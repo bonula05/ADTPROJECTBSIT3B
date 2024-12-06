@@ -1,0 +1,122 @@
+.Login {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #3b2d2d, #2a1f1f);
+  position: relative;
+  animation: fadeIn 1s ease-out; /* Animation added */
+}
+
+.main-container {
+  width: 320px;
+  border-radius: 1rem;
+  background-color: #a2202047; /* Slightly lighter shade for the background */
+  padding: 2.5rem;
+  color: #f3f4f6;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+.show-password{
+  text-align: right;
+}
+
+.main-container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  text-align: left;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  width: 100%;
+}
+
+.form-group label {
+  display: block;
+  color: #a0aec0;
+  margin-bottom: 4px;
+  text-align: left;
+  width: 100%;
+}
+
+.form-group input {
+  padding: 0.8rem;
+  font-size: 1rem;
+  background: #3a2e3a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  border: 2px solid #a78bfa;
+  background: #4b3c4b;
+}
+
+.submit-container {
+  margin-top: 1.5rem;
+}
+
+.btn-primary {
+  display: block;
+  width: 100%;
+  background-color: purple;
+  padding: 0.75rem;
+  text-align: center;
+  color: #fff;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: rgba(128, 0, 128, 0.507);
+}
+
+.register-container {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #aaa;
+  text-align: center;
+}
+
+.register-container a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.register-container a:hover {
+  text-decoration: underline;
+}
+
+/* Animation for fading in */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

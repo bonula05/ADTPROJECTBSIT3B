@@ -1,0 +1,53 @@
+.Main .container {
+  display: flex;
+  width: 100vw;
+}
+
+.Main .container .outlet {
+  flex-grow: 3;
+  padding: 1rem;
+}
+
+.Main .container .navigation {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+ background-color: #1e1e2f;
+  color: #fcfcfc;
+  width: 180px;
+  border-right: 1px #1d1c1b solid;
+  padding-top: 40px;
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+
+.Main .container .navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Main .container .navigation ul li {
+  padding: 10px 20px;
+  transition: background 0.3s ease;
+}
+
+.navigation ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem; /* Adjust icon size */
+  padding: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.navigation ul li a:hover {
+  color: #ff4500; /* Add hover effect color */
+}
+
+
+.Main .container .navigation ul li.logout {
+  cursor: pointer;
+  margin-top: auto;
+}
